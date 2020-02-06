@@ -45,48 +45,48 @@ public class CarApp2 {
 		choice = scnr.nextLine();
 		
 		if (choice.equalsIgnoreCase("nikolai")) {
-			
-			//carsForSale.remove(????????);
+			System.out.println(c1);
 			
 			boughtCarYet = true;
 		} else if (choice.equalsIgnoreCase("fourd")) {
-			
-			//carsForSale.remove(????????);
+			System.out.println(c2);
 			
 			boughtCarYet = true;
 		} else if (choice.equalsIgnoreCase("chewie")) {
-			
-			//carsForSale.remove(????????);
+			System.out.println(c3);
 			
 			boughtCarYet = true;
 		} else if (choice.equalsIgnoreCase("hyonda")) {
-			
-			//carsForSale.remove(????????);
+			System.out.println(c4);
 			
 			boughtCarYet = true;
 		} else if (choice.equalsIgnoreCase("grand")) {
-			
-			//carsForSale.remove(????????);
+			System.out.println(c5);
 			
 			boughtCarYet = true;
 		} else if (choice.equalsIgnoreCase("circus")) {
-			
-			//carsForSale.remove(????????);
+			System.out.println(c6);
 			
 			boughtCarYet = true;
 		} else {
-			System.out.println("Sorry we dont have that brand. Please choose another.");
+			System.out.print("Sorry we dont have that brand. Please choose another.");
 		}
 		} while (boughtCarYet == false);
 		
-		System.out.println("Would you like to buy this car? y/n");
+		System.out.print("Would you like to buy this car? y/n: ");
 		yesno = scnr.next();
 		if (yesno.equalsIgnoreCase("y")) {
 			System.out.println("Excellent! Our finance department will be in touch shortly.");
 		} else {
 			System.out.println("Thanks for visiting our dealership.");
 		}
+		for (int k=1; k<6; ++k) {
+			if (choice.equalsIgnoreCase("circus")) {
+				System.out.println(c6);
+			}
+		}
 		
 	}
-
+	
+	
 }
